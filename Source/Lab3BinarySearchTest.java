@@ -5,13 +5,8 @@ import java.util.Scanner;
 /*
 =============================================================================================================================
 
-CET-Semester_3 Data Structures 	
-		
-	Submission: Lab-3
-	Student: Aaron Dykes, 040933702
-	Professor: George Kriger
-	Submission: Lab-3
-	Section: 313
+ 	Data Structures 	
+	Submission: Aaron Dykes
 	
 =============================================================================================================================
 */
@@ -33,15 +28,9 @@ public class Lab3BinarySearchTest {
 	@param args = arguments.
 */
 	public static void main( String[] args ) {
-/*														Hey look, a string, 
-														an input scanner 
-														and a loop control variable !!!
+
 		
-														Woah! 
-		
-														Is that an object of type...
-														( the class I just created )?
-*/		String integerPrompt = "Enter an integer value to be searched: ";
+		String integerPrompt = "Enter an integer value to be searched: ";
 		Scanner input = new Scanner( System.in );
 		boolean goodInput = true;
 		
@@ -81,19 +70,15 @@ public class Lab3BinarySearchTest {
 							System.out.println("System exiting.");
 							break;
 				
-					default: System.out.printf( "%n%S%n%S%n%n%n%n%s%n%s%n",
-				 		    					"CODE ERROR: 69420",
-				 								"Everything is fucked!",
-				 								"Just kidding...",
-				 								"You selected an invalid option" );
+					default: System.out.printf( "%n%s%n%s%n",
+								    "Sorry, that's an invalid input.",
+								    "Please try again." );
 				}
 				
 			} catch( InputMismatchException ime ) {
-					 System.out.printf( "%n%S%n%S%n%n%n%n%s%n%s%n",
-							 		    "CODE ERROR: 69696969",
-							 			"oh shit fuck!",
-							 			"Just kidding...",
-							 			"You selected an invalid data type" );
+					 System.out.printf( "%n%s%n%s%n",
+							    "Sorry, that's an invalid data type.",
+						  	    "Please try again." );
 					 input.nextLine();
 			}
 		} input.close();
@@ -111,13 +96,8 @@ public class Lab3BinarySearchTest {
 /*
 =============================================================================================================================
 
-CET-Semester_3 Data Structures 
-		
-	Submission: Lab-3
-	Student: Aaron Dykes, 040933702
-	Professor: George Kriger
-	Submission: Lab-3
-	Section: 313
+ 	Data Structures 	
+	Submission: Aaron Dykes
 	
 =============================================================================================================================
 */
